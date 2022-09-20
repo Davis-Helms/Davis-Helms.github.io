@@ -1,0 +1,533 @@
+/*
+color pallet (may not include all colors used)
+
+grey #303030
+dark grey #202020
+light grey #909090
+white #eeeeee
+orange #e17956
+red #e24c66
+blue #64b8d4
+*/
+
+body {
+	/*
+	default values for site
+	*/
+    background: #303030;
+    color: #eeeeee;
+	font-family: 'Courier New', monospace;
+	font-size: 11pt;
+    margin: 0;
+}
+
+#headerContent {
+	/*
+	just the content in the header
+	*/
+	width: 300px;
+    box-sizing: border-box;
+    padding: 30px;
+    position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#headerFail {
+	/*
+	I don't know why the OG header's background won't extend past 100% height, 
+	it just wont fill to the bottom.
+	This ia a div with no content that takes the place of the header's background.
+	*/
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	background: #202020;
+	z-index: 2;
+}
+
+#mobileHeader {
+	/*
+	small strip at top of screen when on mobile
+	*/
+	visibility: hidden;
+	width: 100%;
+	height: 140px;
+	background: #202020;
+    position: fixed;
+	z-index: 3;
+	text-align: center;
+}
+
+#mobileLogo {
+	/*
+	logo on mobile devices
+	*/
+	height: 75px;
+	width: 75px;
+	top: 20px;
+	left: 20px;
+	position: absolute;
+}
+
+#mobileMenu {
+	/*
+	this is the 'X' or 'three lines' for the mobile menu
+	*/
+	visibility: hidden;
+	height: 50px;
+	width: 50px;
+	top: 20px;
+	right: 20px;
+	position: fixed;
+	z-index: 6;
+}
+
+h1 {
+	/*
+	my name
+	*/
+	font-size: 26pt;
+}
+
+h2 {
+	/*
+	titles
+	*/
+	font-size: 14pt;
+}
+
+h3 {
+	/*
+	other 'headers' in the side bar header
+	*/
+	text-transform: uppercase;
+	font-size: 18pt;
+}
+
+ul {
+	/*
+	used for list of my work links in side bar header
+	*/
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+li {
+	/*
+	one element in list
+	*/
+	margin-bottom: 3px;
+	font-size: 15pt;
+}
+
+hr {
+	/*
+	horizontal bar
+	*/
+	width: 100%;
+	margin: 15px 0px;
+}
+
+a {
+	/*
+	links. I use this enought that I should make more id's
+	*/
+	text-decoration: none;
+	color: #dddddd;
+}
+
+a:hover {
+	/*
+	blue, bold text on hover
+	*/
+	color: #64b8d4;
+	font-weight: 800;
+}
+
+a:active {
+	/*
+	dark blue text on click
+	*/
+	color: #3185a1;
+}
+
+#currentPage {
+	/*
+	indicated which page you are on in the side bar menu
+	*/
+	color: #e17956;
+	padding: 0px 10px;
+	font-weight: 600;
+	background: #303030;
+	border-left: 3px solid;
+	border-right: 3px solid;
+}
+
+#currentPage:hover {
+	/*
+	lighter orange on hover
+	*/
+	font-weight: 900;
+	color: #f39b78;
+}
+
+#currentPage:active {
+	/*
+	darker orange on click
+	*/
+	color: #c05734;
+}
+
+.content {
+	/*
+	everything else that isn't in the header
+	*/
+	z-index: 1;
+	padding-left: 300px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.squareBox {
+	/*
+	index page - holds link, image, and title of each work
+	*/
+	height: auto;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.squareBox div {
+	/*
+	index page - holds title of each work
+	*/
+	background: #202020;
+	padding: 8px 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #eeeeee;
+	font-size: 14pt;
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility .1s, opacity .1s linear;
+}
+
+.squareBox:hover div{
+	/*
+	show the title when hovering
+	*/
+	visibility: visible;
+	opacity: .7; 
+}
+
+.squareImage {
+	/*
+	index page - thumbnail image for works
+	*/
+	height: 100%;
+	width: 100%;
+	transform-origin: 50% 50%;
+	transition: transform .1s, visibility .1s linear;
+}
+
+.squareImage:hover {
+	/*
+	zoom in on hover
+	*/
+	transform: scale(1.2);
+}
+
+#mainLogoHolder {
+	/*
+	holds all the images uses in the click animation
+	*/
+	height: 220px;
+	width: 220px;
+	border-radius: 10px;
+}
+
+.mainLogo {
+	/*
+	defaults for all frames of click animation
+	*/
+	height: 220px;
+	width: 220px;
+	position: absolute;
+	animation-timing-function: steps(1);
+	animation-iteration-count: 1;
+	animation-duration: .5s;
+}
+
+#frame1{
+	animation-name: frame1to4;
+	opacity:0;
+}
+
+#frame2{
+	animation-name: frame1to4;
+	opacity:0;
+	animation-delay: .5s;
+}
+
+#frame3{
+	animation-name: frame1to4;
+	opacity:0;
+	animation-delay: 1s;
+}
+
+#frame4{
+	animation-name: frame1to4;
+	opacity:0;
+	animation-delay: 1.5s;
+}
+
+@keyframes frame1to4{
+	/*
+	show, then hide the frame
+	*/
+	0% {opacity:1;}
+	100% {opacity:0;}
+}
+
+#frame5{
+	animation-name: onlyFrame5;
+	opacity:1;
+	animation-duration: 2s;
+}
+
+@keyframes onlyFrame5{
+	/*
+	just show the final frame
+	*/
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+
+.subPages {
+	/*
+	my work / art pages
+	*/
+	width: 75%;
+	margin: auto;
+}
+
+.subPages p {
+	/*
+	overwrite default
+	*/
+	font-size: 18pt;
+}
+
+#aboutProfilePic {
+	/*
+	picture used on about page
+	*/
+	width: 90%;
+	float: left;
+	margin: 10px;
+}
+
+.galleryImage {
+	/*
+	image / video on all the sub pages
+	*/
+	width: 100%;
+	height: auto;
+}
+
+#refresh {
+	/*
+	error catch. hiden behind side bar menu
+	*/
+	top: 10px;
+	left: 10px;
+	width: 280px;
+	position: fixed;
+	font-size: 14pt;
+	font-weight: 900;
+	color: #e17956;
+	background: #020202;
+	z-index: 0;
+}
+
+#resumeImage {
+	/*
+	png image of resume page
+	*/
+	width: 50%;
+	height: auto;
+}
+
+#socialIcon {
+	/*
+	icon for contact page links (phone / twitter / etc)
+	*/
+	height: 18pt;
+	width: auto;
+}
+
+.aboutColumn {
+	/*
+	about page - used to make image on left and text on right
+	*/
+  float: left;
+  width: 50%;
+}
+
+#copyNotification {
+	/*
+	shows once item is clicked to copy
+	*/
+	opacity: 0;
+	color: #e17956;
+}
+
+
+/* responsive design below --------------------------------------------------------------------------------------- */
+
+/* extra large screens */
+@media only screen and (min-width: 2000px) {
+	.squareBox {
+		/*
+		5 images across
+		*/
+		width: 20%;
+	}
+}
+
+/* large screens */
+@media only screen and (max-width: 2000px) {
+	.squareBox {
+		/*
+		4 images across
+		*/
+		width: 25%;
+	}
+}
+
+/* laptop screens*/
+@media only screen and (max-width: 1200px) {
+	.squareBox {
+		/*
+		2 images across
+		*/
+		width: 33%;
+	}
+	
+	.subPages {
+		/*
+		subpages are now full width
+		*/
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	#resumeImage {
+		width: 75%;
+	}
+	
+}
+
+/* tablets */
+@media only screen and (max-width: 900px) {
+	#mobileHeader {
+		visibility: visible;
+	}
+	
+	#mobileMenu {
+		visibility: visible;
+	}
+	
+	#headerContent {
+		width: 100%;
+		display: none;
+		z-index: 5;
+	}
+
+	#headerFail {
+		width: 100%;
+		display: none;
+		z-index: 4;
+	}
+	
+	.content {
+		/*
+		remove space for side menu bar because that is now hidden
+		*/
+		padding-left: 0px;
+		padding-top: 150px;
+	}
+	
+	.squareBox {
+		/*
+		2 images across
+		*/
+		width: 50%;
+	}
+	
+	.squareBox div {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	#resumeImage {
+		width: 100%;
+	}
+}
+
+/* phones */
+@media only screen and (max-width: 600px) {
+	.squareBox {
+		/*
+		1 image across
+		*/
+		width: 100%;
+	}
+	
+	#mobileHeader h1 {
+		font-size: 20pt;;
+	}
+	
+	#mobileHeader h2 {
+		display: none;
+	}
+	
+	#mobileHeader {
+		height: 100px;
+	}
+	
+	.content {
+		padding-top: 110px;
+	}
+	
+	.subPages p {
+		font-size: 14pt;
+	}
+	
+	.column {
+		float: left;
+		width: 100%;
+	}
+}
+
+/* impossibly small */
+@media only screen and (max-width: 420px) {
+	
+	#mobileHeader h1 {
+		font-size: 16pt;
+	}
+	
+	.subPages p {
+		font-size: 12pt;
+	}
+	
+}
