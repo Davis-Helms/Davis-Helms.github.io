@@ -326,15 +326,6 @@ a:active {
 	font-size: 18pt;
 }
 
-#aboutProfilePic {
-	/*
-	picture used on about page
-	*/
-	width: 90%;
-	float: left;
-	margin: 10px;
-}
-
 .galleryImage {
 	/*
 	image / video on all the sub pages
@@ -374,20 +365,46 @@ a:active {
 	width: auto;
 }
 
-.aboutColumn {
-	/*
-	about page - used to make image on left and text on right
-	*/
-  float: left;
-  width: 50%;
-}
-
 #copyNotification {
 	/*
 	shows once item is clicked to copy
 	*/
 	opacity: 0;
 	color: #e17956;
+}
+
+#slideshow {
+	/*
+	slideshow of my tumbnail images
+	*/
+	border-radius: 8px;
+	overflow: hidden;
+	width: 300px;
+	float: left;
+	margin: 0px 25px 25px 0px;
+}
+
+#slideWrapper {
+	/*
+	(num of thumbnails + 1) * 3
+	*/
+	width: 100%;
+    display: flex;
+    animation: slide 54s infinite linear;
+}
+
+.slide {
+	height: 300px;
+	width: 300px;
+}
+
+@keyframes slide{
+	/*
+	(num of thumbnails + 1) * 100
+	*/
+    100%{
+        transform: translateX(-1800%);
+    }
 }
 
 
