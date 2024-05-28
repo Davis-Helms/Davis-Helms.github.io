@@ -1,0 +1,112 @@
+<NotepadPlus>
+    <Project name="Website">
+        <Folder name="css">
+            <File name="css\styles.css" />
+        </Folder>
+        <Folder name="images">
+            <Folder name="art_work">
+                <Folder name="space_mechanic">
+                    <File name="images\art_work\space_mechanic\ai1.png" />
+                    <File name="images\art_work\space_mechanic\ai2.png" />
+                    <File name="images\art_work\space_mechanic\main_menu.png" />
+                    <File name="images\art_work\space_mechanic\promo.png" />
+                    <File name="images\art_work\space_mechanic\slime1.png" />
+                    <File name="images\art_work\space_mechanic\slime2.png" />
+                    <File name="images\art_work\space_mechanic\warzone1.png" />
+                    <File name="images\art_work\space_mechanic\warzone2.png" />
+                </Folder>
+                <File name="images\art_work\bank_dialogue.mp4" />
+                <File name="images\art_work\card_trick.gif" />
+                <File name="images\art_work\changing_emotions.mp4" />
+                <File name="images\art_work\copy_a_master.mp4" />
+                <File name="images\art_work\doughnut.mp4" />
+                <File name="images\art_work\gig_poster.png" />
+                <File name="images\art_work\late_night.mp4" />
+                <File name="images\art_work\owes_money.mp4" />
+                <File name="images\art_work\racetrack.gif" />
+                <File name="images\art_work\short_jump.mp4" />
+                <File name="images\art_work\skytrain.mp4" />
+                <File name="images\art_work\squash_and_stretch.mp4" />
+                <File name="images\art_work\stop_motion.mp4" />
+                <File name="images\art_work\trippy_earth.mp4" />
+                <File name="images\art_work\walk_cycle.gif" />
+                <File name="images\art_work\weight.mp4" />
+                <File name="images\art_work\wooosh.gif" />
+            </Folder>
+            <Folder name="logo">
+                <Folder name="animated">
+                    <File name="images\logo\animated\01_both_up.png" />
+                    <File name="images\logo\animated\02_davis_down.png" />
+                    <File name="images\logo\animated\03_helms_down.png" />
+                </Folder>
+                <File name="images\logo\black_on_trans.png" />
+                <File name="images\logo\black_on_white.png" />
+                <File name="images\logo\favicon.png" />
+                <File name="images\logo\outlines_on_black.png" />
+                <File name="images\logo\outlines_on_trans.png" />
+                <File name="images\logo\outlines_on_white.png" />
+                <File name="images\logo\white_on_black.png" />
+                <File name="images\logo\white_on_trans.png" />
+            </Folder>
+            <Folder name="thumbnails">
+                <File name="images\thumbnails\bank_dialogue.png" />
+                <File name="images\thumbnails\card_trick.png" />
+                <File name="images\thumbnails\changing_emotions.png" />
+                <File name="images\thumbnails\copy_a_master.png" />
+                <File name="images\thumbnails\doughnut.png" />
+                <File name="images\thumbnails\gig_poster.png" />
+                <File name="images\thumbnails\late_night.png" />
+                <File name="images\thumbnails\owes_money.png" />
+                <File name="images\thumbnails\racetrack.png" />
+                <File name="images\thumbnails\short_jump.png" />
+                <File name="images\thumbnails\skytrain.png" />
+                <File name="images\thumbnails\space_mechanic.png" />
+                <File name="images\thumbnails\squash_and_stretch.png" />
+                <File name="images\thumbnails\stop_motion.png" />
+                <File name="images\thumbnails\trippy_earth.png" />
+                <File name="images\thumbnails\walk_cycle.png" />
+                <File name="images\thumbnails\weight.png" />
+                <File name="images\thumbnails\wooosh.png" />
+            </Folder>
+            <File name="images\Davis_Helms_Resume_2023.pdf" />
+            <File name="images\Davis_Helms_Resume_2023.png" />
+            <File name="images\emailIcon.png" />
+            <File name="images\githubIcon.png" />
+            <File name="images\instagramIcon.png" />
+            <File name="images\linkedinIcon.png" />
+            <File name="images\menu.png" />
+            <File name="images\menu_x.png" />
+            <File name="images\phoneIcon.png" />
+        </Folder>
+        <Folder name="my_work">
+            <File name="my_work\bank_dialogue.html" />
+            <File name="my_work\card_trick.html" />
+            <File name="my_work\changing_emotions.html" />
+            <File name="my_work\copy_a_master.html" />
+            <File name="my_work\doughnut.html" />
+            <File name="my_work\gig_poster.html" />
+            <File name="my_work\late_night.html" />
+            <File name="my_work\owes_money.html" />
+            <File name="my_work\racetrack.html" />
+            <File name="my_work\short_jump.html" />
+            <File name="my_work\skytrain.html" />
+            <File name="my_work\space_mechanic.html" />
+            <File name="my_work\squash_and_stretch.html" />
+            <File name="my_work\stop_motion.html" />
+            <File name="my_work\trippy_earth.html" />
+            <File name="my_work\walk_cycle.html" />
+            <File name="my_work\weight.html" />
+            <File name="my_work\wooosh.html" />
+        </Folder>
+        <Folder name="scripts">
+            <File name="scripts\script.js" />
+        </Folder>
+        <File name="about.html" />
+        <File name="CNAME" />
+        <File name="contact.html" />
+        <File name="index.html" />
+        <File name="README.md" />
+        <File name="resume.html" />
+        <File name="SocialPreview.png" />
+    </Project>
+</NotepadPlus>
