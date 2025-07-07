@@ -14,11 +14,11 @@ body {
 	/*
 	default values for site
 	*/
-    background: #303030;
-    color: #eeeeee;
+	background: #303030;
+	color: #eeeeee;
 	font-family: 'Courier New', monospace;
 	font-size: 11pt;
-    margin: 0;
+	margin: 0;
 }
 
 #headerContent {
@@ -26,9 +26,9 @@ body {
 	just the content in the header
 	*/
 	width: 300px;
-    box-sizing: border-box;
-    padding: 30px;
-    position: absolute;
+	box-sizing: border-box;
+	padding: 30px;
+	position: absolute;
 	z-index: 3;
 	top: 0;
 	left: 0;
@@ -57,7 +57,7 @@ body {
 	width: 100%;
 	height: 140px;
 	background: #202020;
-    position: fixed;
+	position: fixed;
 	z-index: 3;
 	text-align: center;
 }
@@ -220,12 +220,12 @@ a:active {
 	transition: visibility .1s, opacity .1s linear;
 }
 
-.squareBox:hover div{
+.squareBox:hover div {
 	/*
 	show the title when hovering
 	*/
 	visibility: visible;
-	opacity: .7; 
+	opacity: .7;
 }
 
 .squareImage {
@@ -266,49 +266,61 @@ a:active {
 	animation-duration: .5s;
 }
 
-#frame1{
+#frame1 {
 	animation-name: frame1to4;
-	opacity:0;
+	opacity: 0;
 }
 
-#frame2{
+#frame2 {
 	animation-name: frame1to4;
-	opacity:0;
+	opacity: 0;
 	animation-delay: .5s;
 }
 
-#frame3{
+#frame3 {
 	animation-name: frame1to4;
-	opacity:0;
+	opacity: 0;
 	animation-delay: 1s;
 }
 
-#frame4{
+#frame4 {
 	animation-name: frame1to4;
-	opacity:0;
+	opacity: 0;
 	animation-delay: 1.5s;
 }
 
-@keyframes frame1to4{
+@keyframes frame1to4 {
+
 	/*
 	show, then hide the frame
 	*/
-	0% {opacity:1;}
-	100% {opacity:0;}
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
 
-#frame5{
+#frame5 {
 	animation-name: onlyFrame5;
-	opacity:1;
+	opacity: 1;
 	animation-duration: 2s;
 }
 
-@keyframes onlyFrame5{
+@keyframes onlyFrame5 {
+
 	/*
 	just show the final frame
 	*/
-	0% {opacity:0;}
-	100% {opacity:1;}
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 
@@ -390,8 +402,8 @@ a:active {
 	(num of thumbnails + 1) * 3
 	*/
 	width: 100%;
-    display: flex;
-    animation: slide 54s infinite linear;
+	display: flex;
+	animation: slide 54s infinite linear;
 }
 
 .slide {
@@ -399,13 +411,14 @@ a:active {
 	width: 300px;
 }
 
-@keyframes slide{
+@keyframes slide {
+
 	/*
 	(num of thumbnails + 1) * 100
 	*/
-    100%{
-        transform: translateX(-1800%);
-    }
+	100% {
+		transform: translateX(-1800%);
+	}
 }
 
 
@@ -439,7 +452,7 @@ a:active {
 		*/
 		width: 33%;
 	}
-	
+
 	.subPages {
 		/*
 		subpages are now full width
@@ -448,11 +461,11 @@ a:active {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	
+
 	#resumeImage {
 		width: 75%;
 	}
-	
+
 }
 
 /* tablets */
@@ -460,11 +473,11 @@ a:active {
 	#mobileHeader {
 		visibility: visible;
 	}
-	
+
 	#mobileMenu {
 		visibility: visible;
 	}
-	
+
 	#headerContent {
 		width: 100%;
 		display: none;
@@ -476,7 +489,7 @@ a:active {
 		display: none;
 		z-index: 4;
 	}
-	
+
 	.content {
 		/*
 		remove space for side menu bar because that is now hidden
@@ -484,19 +497,19 @@ a:active {
 		padding-left: 0px;
 		padding-top: 150px;
 	}
-	
+
 	.squareBox {
 		/*
 		2 images across
 		*/
 		width: 50%;
 	}
-	
+
 	.squareBox div {
 		opacity: 1;
 		visibility: visible;
 	}
-	
+
 	#resumeImage {
 		width: 100%;
 	}
@@ -510,27 +523,28 @@ a:active {
 		*/
 		width: 100%;
 	}
-	
+
 	#mobileHeader h1 {
-		font-size: 20pt;;
+		font-size: 20pt;
+		;
 	}
-	
+
 	#mobileHeader h2 {
 		display: none;
 	}
-	
+
 	#mobileHeader {
 		height: 100px;
 	}
-	
+
 	.content {
 		padding-top: 110px;
 	}
-	
+
 	.subPages p {
 		font-size: 14pt;
 	}
-	
+
 	.column {
 		float: left;
 		width: 100%;
@@ -539,13 +553,13 @@ a:active {
 
 /* impossibly small */
 @media only screen and (max-width: 420px) {
-	
+
 	#mobileHeader h1 {
 		font-size: 16pt;
 	}
-	
+
 	.subPages p {
 		font-size: 12pt;
 	}
-	
+
 }
